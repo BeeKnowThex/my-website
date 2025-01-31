@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binod Biswakarma</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #121212; /* Dark background */
+      color: #fff; /* Light text color */
+    }
+    header {
+      background: #05bfeef3;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 18px;
+    }
+    nav {
+      text-align: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+    .content-section {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    .profile-container {
+      background-color: #222; /* Dark background */
+      padding: 10px;
+      margin: 0 auto;
+      width: 50%;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #05bfeef3;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #0be0f0;
+    }
+    footer {
+      background: #05bfeef3;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      width: 30%;
+      min-width: 250px;
+      background: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Binod Biswakarma</h1>
+    <p>Creator | YouTuber | Tech Enthusiast</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" onclick="showContent('home')">Home</a></li>
+      <li><a href="javascript:void(0);" onclick="showContent('bio')">Bio</a></li>
+      <li><a href="javascript:void(0);" onclick="showContent('experiments')">My Experiments</a></li>
+      <li><a href="javascript:void(0);" onclick="showContent('gallery')">Gallery</a></li>
+      <li><a href="javascript:void(0);" onclick="showContent('modeling')">3D Modeling</a></li>
+      <li><a href="javascript:void(0);" onclick="showContent('yt-page')">YouTube Page</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Home Section -->
+    <section id="home" class="content-section active">
+      <h2 class="section-title">Welcome to My Profile</h2>
+      <div class="profile-container">
+        <img src="file:///C:/Users/user/Downloads/IMG_20231116_103848_947.jpg" alt="My Photo">
+      </div>
+      <p><b>Hello! I’m Binod Biswakarma, a passionate creator who loves exploring technology, making games, and designing electric bikes/cycle. Welcome to my world of creativity!</b></p>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="content-section">
+      <h2 class="section-title">About Me</h2>
+      <p>Hi, I’m Binod Biswakarma, a passionate creator and learner. I started my journey in the tech world as a hobby, and now I share my journey with the world through my YouTube channel and personal projects. I love experimenting, exploring, and learning about new technologies, especially in gaming and e-bike conversions.I like to eajoy my life with my friends and family. I also aim to create a gadget that I can fly.
+
+      </p>
+    </section>
+
+    <!-- My Experiments Section -->
+    <section id="experiments" class="content-section">
+      <h2 class="section-title">My Experiments</h2>
+      <p>I love to experiment with new ideas, especially in the areas of game development and e-bike technology for transportation. These experiments allow me to learn and improve my skills.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="content-section">
+      <h2 class="section-title">Gallery</h2>
+      <p>Here’s a collection of my work, including designs, models, and game projects that I’ve worked on. Feel free to check them out!</p>
+      
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="your_image_url_1_here" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="your_image_url_2_here" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="your_image_url_3_here" alt="Image 3">
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+
+    <!-- 3D Modeling Section -->
+    <section id="modeling" class="content-section">
+      <h2 class="section-title">3D Modeling</h2>
+      <p>3D modeling is one of my passions, and I love designing models for games and personal projects. I use tools like Blender to create detailed models and animations.</p>
+    </section>
+
+    <!-- YouTube Page Section -->
+    <section id="yt-page" class="content-section">
+      <h2 class="section-title">My YouTube</h2>
+      <p>Check out my YouTube channel (MONA SLIDE) where I upload content about education, interesting facts, entertainment, and personal projects. I share my YouTube journey in videos, personal projects, and more. Don’t forget to like, comment, and subscribe! :)</p>
+      <a href="https://www.youtube.com/channel/your_channel_url_here" target="_blank">
+        <button style="padding: 10px 20px; background-color: #05bfeef3; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+          Visit My YouTube Channel
+        </button>
+      </a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Binod Biswakarma. All Rights Reserved</p>
+    <p>
+      Follow me on: 
+      <a href="https://facebook.com" target="_blank">Facebook</a> | 
+      <a href="https://twitter.com" target="_blank">Twitter</a> | 
+      <a href="https://instagram.com" target="_blank">Instagram</a> | 
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script>
+    // Function to show the selected section and hide others
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.classList.add('active');
+        } else {
+          section.classList.remove('active');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
